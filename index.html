@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./order.css">
+    <!--==Fav-icon===============================-->
+<link rel="shortcut icon" href="./IMG/fav-icon.png">
+<!--==Using-Font-Awesome=====================-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!--==Import-Font-Family======================-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<title>Order</title>
+</head>
+    <!--==Navigation================================-->
+    <nav class="navigation">
+        <!--logo-------->
+        <a href="./index.html" class="logo">
+            <spanw>A</span><spanr>-MART</span1>
+        </a>
+     
+    <!--menu-------->
+        <ul class="menu">
+            <li><a href= "#">Home</a></li>
+            <li><a href= "#">About us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="./index.html">Order</a></li>
+            <li><a href="#">Loyalty Registration</a></li>
+        </ul>
+    <!--right-nav-(cart-like)-->
+        <section class="right-nav">
+     <!--cart----->
+        <a href="#" class="cart">
+         <i class="fas fa-shopping-cart"></i>
+        <span>0</span></a></section>
+    </nav>
+    <!--nav-end--------------------->
+
+    <main>
+        <form id="orderForm">
+            <div class="category" id="fruits">
+                <h2>Available Fruits</h2>
+                
+                <img src="./IMG/App.png" alt="Apple">
+                <label>Apple (per kg):
+                    <input type="number" min="0" step="0.1" data-category="fruit" data-price="2.5">
+                </label>
+                
+                <img src="./IMG/Prom.png" alt="Pomegranate">
+                <label>Pomegranate (per kg):
+                    <input type="number" min="0" step="0.1" data-category="fruit" data-price="5">
+                </label>
+               
+                <img src="./IMG/Gr.png" alt="Grapes">
+                <label>Grapes (per kg):
+                    <input type="number" min="0" step="0.1" data-category="fruit" data-price="6">
+                </label>
+    
+                <img src="./IMG/WM.png" alt="Watermelon">
+                <label>Watermelon (per kg):
+                    <input type="number" min="0" step="0.1" data-category="fruit" data-price="3">
+                </label>
+    
+                <img src="./IMG/Ban.png" alt="Banana">
+                <label>Banana (per kg):
+                    <input type="number" min="0" step="0.1" data-category="fruit" data-price="2.5">
+                </label>
+    
+                <img src="./IMG/Pap.png" alt="Papaya">
+                <label>Papaya (per kg):
+                    <input type="number" min="0" step="0.1" data-category="fruit" data-price="3">
+                </label>
+            </div>
+    
+            <div class="category" id="vegetables">
+                <h2>Available Vegetables</h2>
+                
+                <img src="./IMG/car.jpg" alt="Carrot">
+                <label>Carrot (per kg):
+                    <input type="number" min="0" step="0.1" data-category="vegetable" data-price="3">
+                </label>
+    
+                <img src="./IMG/pot.png" alt="Potato">
+                <label>Potato (per kg):
+                    <input type="number" min="0" step="0.1" data-category="vegetable" data-price="1.5">
+                </label>
+    
+                <img src="./IMG/tom.png" alt="Tomato">
+                <label>Tomato (per kg):
+                    <input type="number" min="0" step="0.1" data-category="vegetable" data-price="2.5">
+                </label>
+    
+                <img src="./IMG/bro.jpg" alt="Broccoli">
+                <label>Broccoli (per kg):
+                    <input type="number" min="0" step="0.1" data-category="vegetable" data-price="3.5">
+                </label>
+    
+                <img src="./IMG/on.png" alt="Onion">
+                <label>Onion (per kg):
+                    <input type="number" min="0" step="0.1" data-category="vegetable" data-price="2">
+                </label>
+    
+                <img src="./IMG/Spi.jpg" alt="Spinach">
+                <label>Spinach (per kg):
+                    <input type="number" min="0" step="0.1" data-category="vegetable" data-price="4.5">
+                </label>
+            </div>
+    
+            <div class="category" id="dairy">
+                <h2>Available Dairy Products</h2>
+                
+                <img src="./IMG/mipow.jpeg" alt="Milk Powder 400g">
+                <label>Milk Powder 400g:
+                    <input type="number" min="0" data-category="dairy" data-price="7">
+                </label>
+    
+                <img src="./IMG/chee.jpeg" alt="Cheese 10 slices">
+                <label>Cheese 10 Slices:
+                    <input type="number" min="0" data-category="dairy" data-price="5">
+                </label>
+    
+                <img src="./IMG/but.jpg" alt="Butter 500g">
+                <label>Butter 500g:
+                    <input type="number" min="0" data-category="dairy" data-price="3.5">
+                </label>
+    
+                <img src="./IMG/yog.jpg" alt="Yogurt">
+                <label>Yogurt:
+                    <input type="number" min="0" data-category="dairy" data-price="0.5">
+                </label>
+    
+                <img src="./IMG/ghee.png" alt="Ghee 500ml">
+                <label>Ghee 500ml:
+                    <input type="number" min="0" data-category="dairy" data-price="3.5">
+                </label>
+    
+                <img src="./IMG/marg.webp" alt="Margarine 500g">
+                <label>Margarine 500g:
+                    <input type="number" min="0" data-category="dairy" data-price="4">
+                </label>
+            </div>
+    
+            <div class="category" id="meat">
+                <h2>Available Meats and Seafoods</h2>
+                    
+                <img src="./IMG/chic.png" alt="Chicken">
+                <label>Chicken (per kg):
+                    <input type="number" min="0" step="0.1" data-category="meat" data-price="5">
+                </label>
+    
+                <img src="./IMG/beef.png" alt="Beef">
+                <label>Beef (per kg):
+                    <input type="number" min="0" step="0.1" data-category="meat" data-price="8">
+                </label>
+    
+                <img src="./IMG/fish.png" alt="Fish">
+                <label>Fish (per kg):
+                    <input type="number" min="0" step="0.1" data-category="meat" data-price="7">
+                </label>
+    
+                <img src="./IMG/crab.png" alt="Brown Crab">
+                <label>Brown Crab (per kg):
+                    <input type="number" min="0" step="0.1" data-category="meat" data-price="11">
+                </label>
+    
+                <img src="./IMG/shrimp.png" alt="Shrimp">
+                <label>Shrimp (per kg):
+                    <input type="number" min="0" step="0.1" data-category="meat" data-price="13">
+                </label>
+            </div>
+    
+            <div class="category" id="baking">
+                <h2>Available Baking and Cooking Ingredients</h2>
+                
+                <img src="./IMG/flour.png" alt="Flour">
+                <label>Flour (kg):
+                    <input type="number" min="0" step="0.1" data-category="baking" data-price="2.2">
+                </label>
+    
+                <img src="./IMG/brsu.png" alt="Brown Sugar">
+                <label>Brown Sugar (kg):
+                    <input type="number" min="0" step="0.1" data-category="baking" data-price="1">
+                </label>
+    
+                <img src="./IMG/salt.png" alt="Salt">
+                <label>Salt (kg):
+                    <input type="number" min="0" step="0.1" data-category="baking" data-price="1">
+                </label>
+    
+                <img src="./IMG/bakpow.png" alt="Baking Powder 500g">
+                <label>Baking Powder 500g:
+                    <input type="number" min="0" data-category="baking" data-price="1.3">
+                </label>
+    
+                <img src="./IMG/icesug.png" alt="Icing Sugar 500g">
+                <label>Icing Sugar 500g:
+                    <input type="number" min="0" data-category="baking" data-price="2">
+                </label>
+    
+                <img src="./IMG/eggs.png" alt="Eggs (10)">
+                <label>Eggs (10):
+                    <input type="number" min="0" data-category="baking" data-price="1.5">
+                </label>
+            </div>
+        </form>
+    </main>
+    
+
+        <section class="order-summary">
+            <h2>Current Order</h2>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price:</td>
+                        <td id="totalPrice">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="buttons">
+                <button type="button" id="addToFavourites">Add to Favourites</button>
+                <button type="button" id="applyFavourites">Apply Favourites</button>
+                <button type="button" id="buyNow">Buy Now</button>
+            </div>
+        </section>
+     <!--==Footer=============================================-->
+  <footer>
+    <section class="footer-container">
+        <!--logo-container------>
+        <section class="footer-logo">
+            <a href="#"><span>A</span>-MART</a>
+            <!--social----->
+        </section>
+           <!--links------------------------->
+    <section class="footer-links">
+        <strong>Product</strong>
+        <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Best Sellers</a></li>
+        </ul>
+    </section>
+    <section class="footer-links">
+        <strong>Category</strong>
+        <ul>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Dairy Products</a></li>
+            <li><a href="#">Cosmetics and Skincare</a></li> 
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Meat and Seafood</a></li>
+            <li><a href="#">Baking and Cooking Ingredients</a></li>
+        </ul> 
+    </section>
+    <!--links-------------------------->
+    <section class="footer-links">
+        <strong>Contact</strong>
+        <ul>
+            <li><a href="#">Phone : +94 11 7703700</a></li>
+            <li><a href="#">Email : office@amart.com</a></li>
+        </ul>
+    </section>
+    </section>
+</footer>
+<script src="./order.js"></script>
+</body>
+</html>
+
+
+
+ <!--References-------------------------->
+ <!--https://www.bootstrapcdn.com/fontawesome/-------------------------->
+ <!--https://fonts.google.com/specimen/Poppins-------------------------->
+ <!--https://fontawesome.com/icons-------------------------->
